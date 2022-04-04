@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0912279-BC2F-4D04-8772-21B0CC028ADC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SI_Bioskop.My.MyApplication</StartupObject>
+    <RootNamespace>SI_Bioskop</RootNamespace>
+    <AssemblyName>SI_Bioskop</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SI_Bioskop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SI_Bioskop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>SI_Bioskop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>SI_Bioskop.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>SI_Bioskop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>SI_Bioskop.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MessagingToolkit.Barcode">
+      <HintPath>..\MessagingToolkit.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>..\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WebCam_Capture">
+      <HintPath>..\..\..\..\..\Downloads\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Crew.Designer.vb">
+      <DependentUpon>Crew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Crew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.vb">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find ID Card.Designer.vb">
+      <DependentUpon>Find ID Card.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Find ID Card.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report Customer.Designer.vb">
+      <DependentUpon>Form Report Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report Data Crew.Designer.vb">
+      <DependentUpon>Form Report Data Crew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Data Crew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Report Movie.Designer.vb">
+      <DependentUpon>Form Report Movie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Report Movie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID Card Form.Designer.vb">
+      <DependentUpon>ID Card Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ID Card Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interval Data Crew.Designer.vb">
+      <DependentUpon>Interval Data Crew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interval Data Crew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koneksi.vb" />
+    <Compile Include="Kursi.Designer.vb">
+      <DependentUpon>Kursi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kursi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menu.Designer.vb">
+      <DependentUpon>Main Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie.Designer.vb">
+      <DependentUpon>Movie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Movie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Print Ticket.Designer.vb">
+      <DependentUpon>Print Ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Print Ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR Code Generator.Designer.vb">
+      <DependentUpon>QR Code Generator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QR Code Generator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCQR_Reader.Designer.vb">
+      <DependentUpon>BCQR_Reader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BCQR_Reader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt Bioskop.Designer.vb">
+      <DependentUpon>Receipt Bioskop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt Bioskop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.vb">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report Crew.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Crew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Customer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Customer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Data Crew.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Data Crew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report ID Card Crew.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report ID Card Crew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report ID Card.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report ID Card.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Movie.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Movie.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Periodik.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Periodik.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Receipt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report Ticket.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report Ticket.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScanReader.Designer.vb">
+      <DependentUpon>ScanReader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScanReader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Crew.resx">
+      <DependentUpon>Crew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find ID Card.resx">
+      <DependentUpon>Find ID Card.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Customer.resx">
+      <DependentUpon>Form Report Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Data Crew.resx">
+      <DependentUpon>Form Report Data Crew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Report Movie.resx">
+      <DependentUpon>Form Report Movie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID Card Form.resx">
+      <DependentUpon>ID Card Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interval Data Crew.resx">
+      <DependentUpon>Interval Data Crew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kursi.resx">
+      <DependentUpon>Kursi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menu.resx">
+      <DependentUpon>Main Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie.resx">
+      <DependentUpon>Movie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print Ticket.resx">
+      <DependentUpon>Print Ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR Code Generator.resx">
+      <DependentUpon>QR Code Generator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCQR_Reader.resx">
+      <DependentUpon>BCQR_Reader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt Bioskop.resx">
+      <DependentUpon>Receipt Bioskop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Crew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Crew.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Customer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Customer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Data Crew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Data Crew.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report ID Card Crew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report ID Card Crew.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report ID Card.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report ID Card.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Movie.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Movie.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Periodik.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Periodik.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Receipt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report Ticket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report Ticket.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanReader.resx">
+      <DependentUpon>ScanReader.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
